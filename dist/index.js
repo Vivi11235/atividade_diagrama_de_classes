@@ -2,7 +2,16 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Item_1 = require("./atividade1/Item");
 const Pedido_1 = require("./atividade1/Pedido");
+const Circulo_1 = require("./atividade2/Circulo");
+const Retangulo_1 = require("./atividade2/Retangulo");
 const item = new Item_1.Item(100, 'blusa', 'blusa leve cor verde');
 const pedido = new Pedido_1.Pedido();
 pedido.adicionarItem(item);
 console.log(pedido);
+const circulo = new Circulo_1.Circulo(30);
+circulo.desenhar();
+circulo.redimensionar(10, 'raio');
+const retangulo = new Retangulo_1.Retangulo(100, 20);
+retangulo.desenhar();
+retangulo.redimensionar(30, 'comprimento');
+retangulo.redimensionar(5, 'altura');
